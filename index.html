@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--Edit the title of the page-->
+    <title>Osprey Sightings 2013</title>
+    <meta name="A time-animated map of osprey observations submitted to eBird during 2013." content="">
+    <meta name="M. Taylor Long" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.ie.css" />
+    <![endif]-->
+    <!--Switch between the different themes changing the stylesheet below - light-theme.css |dark-theme.css -->
+    <link rel="stylesheet" href="css/light-theme.css">
+    <link rel="stylesheet" href="css/makeitresponsive.css">
+  </head>
+  <body>
+
+    <div class="map" id="map"></div>
+
+    <div class="sidepanel">
+      <div class="wrapper">
+        <div class="context subheader">
+          <p>Map created by <a href="http://mtaylorlong.com">M. Taylor Long</a></p>
+        </div>
+        <h1>Osprey Sightings in 2013</h1>
+        <p>
+           In 2002, The Cornell Lab or Ornithology and National Audubon Society launched the eBird project – a real-time, online checklist to collect bird observations voluntarily submitted by the public. In its first decade, eBird has revolutionized the way that the ornithological community reports and accesses information about birds.
+           <a href="http://ebird.org/content/ebird/about/" class="info">Learn more about eBird...</a>
+        </p>
+
+        <p>
+           This map shows every sighting of Ospreys (fish-eating raptors found world-wide) submitted to the eBird database in 2013. The map is animated by the date the sighting was made, revealing the ebb and flow of these birds' range as they move from their warmer wintering grounds to their more northern summer grounds. An osprey may travel more than 160,000 migration miles during its 15-to-20-year lifetime (<a href="http://www.allaboutbirds.org/guide/osprey/lifehistory">allaboutbirds.org</a>).
+        </p>
+
+        <p>
+          <a title="By NASA [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AOspreyNASA.jpg"><img width="350" alt="OspreyNASA" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0f/OspreyNASA.jpg/512px-OspreyNASA.jpg"/></a>
+        </p>
+
+        <div class="context footer">
+          <p>Create your maps with ease using <a href="http://cartodb.com">CartoDB</a></p></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&v=3.8"></script>
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+    <!--Change the URL below in order to change the map that is being shown.
+    Go to your map in CartoDB, click on share, and copy the URL undert the API section
+    Check the cartodb.js documentation for more info
+    http://developers.cartodb.com/documentation/cartodb-js.html-->
+    <script type="text/javascript">
+      cartodb.createVis('map', 'http://longx598.cartodb.com/api/v2/viz/dc39b0d0-dab2-11e3-837c-0edbca4b5057/viz.json');
+    </script>
+
+  </body>
+      </html>
